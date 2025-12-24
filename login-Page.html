@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" sizes="32x32" href="" />
+	<title>Sass-Boilerplate</title>
+	<!-- Google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+		rel="stylesheet" />
+	<!-- Font answasome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Css -->
+	<link rel="stylesheet" href="./dist/style.css" />
+	<!-- My script -->
+	<script defer src="./app/js/script.js"></script>
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+		rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+		crossorigin="anonymous">
+
+</head>
+
+<body>
+
+	<!-- bootstrap scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+
+	<!-- Header -->
+	<header class="cyber-header">
+		<div class="container-fluid h-100">
+			<div class="d-flex justify-content-between align-items-center h-100 px-4">
+
+				<div class="header-logo">
+					<a href="#">
+						<img class="img-logo" src="./images/logo.png" alt="Cybersoft Logo">
+					</a>
+				</div>
+
+				<div class="header-search ms-auto me-4 d-flex align-items-center">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<span class="search-text">Search</span>
+				</div>
+
+				<div class="header-components d-flex align-items-center gap-4">
+					<div class="cart-item">
+						<i class="fa-solid fa-cart-shopping"></i>
+						<span class="cart-count">(1)</span>
+					</div>
+
+					<div class="auth-links">
+						<a href="#" class="login-link">Login</a>
+						<a href="#" class="register-link">Register</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<!-- Menu Nav-->
+	<section class="menu-nav bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link" href="#">Men</a>
+						<a class="nav-link" href="#">Women</a>
+						<a class="nav-link" href="#">Kid</a>
+						<a class="nav-link" href="#">Sport</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<!-- Login title -->
+	<section>
+		<nav class="navbar navbar-light bg-light">
+			<div class="container-fluid">
+				<span class="navbar-brand mb-0 h1">Login</span>
+			</div>
+		</nav>
+	</section>
+
+	<!-- Login form -->
+	<div class="container">
+		<form>
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Email</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+					placeholder="Email">
+				<div id="emailResponse" class="form-text"></div>
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				<div id="passwordResponse" class="form-text"></div>
+			</div>
+			<!-- Login with usser and password or register -->
+			<div class="mb-3 form-check">
+				<a href="#">Register now ?</a>
+				<button type="button" class="btn btn-primary rounded-pill btn-login">Login</button>
+			</div>
+
+			<!-- Login with facebook -->
+			<div class="container">
+				<button
+					class="btn btn-facebook rounded-pill w-100 py-2 d-flex align-items-center justify-content-center shadow-sm">
+					<i class="fab fa-facebook icon-facebook"></i>
+					<span class="fs-5 fw-normal">Continue with Facebook</span>
+				</button>
+			</div>
+		</form>
+	</div>
+
+	<!-- Footer -->
+	<footer class="text-black text-center ">
+		<div class="container">
+			<!-- text-start to set all the words to the left ( or the at the start ) -->
+			<div class="row text-start">
+				<!-- Footer area content 1 -->
+				<div class="col-md-4 border-md-end mb-4 mb-md-0 ps-md-5">
+					<h5 class="fw-bold text-uppercase mb-3">Get Help</h5>
+					<ul class="list-unstyled fw-bold">
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">Home</a></li>
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">Nike</a></li>
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">Adidas</a></li>
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">Contact</a></li>
+					</ul>
+				</div>
+
+				<!-- Footer area content 2 -->
+				<div class="col-md-4 border-md-end mb-4 mb-md-0 ps-md-5">
+					<h5 class="fw-bold text-uppercase mb-3">Support</h5>
+					<ul class="list-unstyled fw-bold ">
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">About</a></li>
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">Contact</a></li>
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">Help</a></li>
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">Phone</a></li>
+					</ul>
+				</div>
+
+				<!-- Footer area content 3 -->
+				<div class="col-md-4 ps-md-5">
+					<h5 class="fw-bold text-uppercase mb-3">Register</h5>
+					<ul class="list-unstyled fw-bold">
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">register</a>
+						</li>
+						<li class="mb-2"><a href="#" class="text-decoration-none text-dark footer-link">login</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- Credit -->
+	<section class="credit-Section">
+		<div class="text-center p-3 credit-info">
+			<p class="mb-0 text-dark">
+				© 2022 Cybersoft All Rights Reserved | Design Theme by Trương Tấn Khải.
+			</p>
+		</div>
+	</section>
+
+	<!-- boostrap script-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
