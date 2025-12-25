@@ -1,0 +1,28 @@
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	line-height: 1.1;
+	margin-top: 0;
+}
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+// heading, text
+
+.search-text {
+  font-size: 31px;
+  padding-left: 8px;
+}
+
+.Login-title-container {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+
+  .login-title {
+    font-size: 48px;
+    font-weight: 350;
+  }
+}

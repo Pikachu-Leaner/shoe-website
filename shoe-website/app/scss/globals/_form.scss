@@ -1,0 +1,35 @@
+.login-form-container {
+  max-width: 443px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-check
+{
+    text-align: right;
+    .form-label
+    {
+        font-weight: 400;
+    }
+}
+
+.form-check
+{
+    .register-link
+    {
+        font-size: 16px;
+        text-decoration: none;
+        opacity: 0.8;
+        padding-right: 10px;
+    }
+
+    .btn-login
+    {
+        width: 121px;
+        height: 48px;
+        background-color: var(--btn-login-bg);
+        color: var(--bright);
+    }
+
+}

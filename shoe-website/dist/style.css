@@ -5,8 +5,6 @@ html {
 
 body {
   margin: 0;
-  margin: 0 !important;
-  font-family: 'Jost', sans-serif;
 }
 
 main {
@@ -207,6 +205,9 @@ template {
   --pinterest: #bd081c;
   --instagram: #e4405f;
   --whatsapp: #25d366;
+  --bg-credit: #dcdc;
+  --btn-login-bg: #6200ee;
+  --btn-facebook-bg: #1877f2;
 }
 
 html {
@@ -274,6 +275,20 @@ a:active {
   text-decoration: none;
 }
 
+.search-text {
+  font-size: 31px;
+  padding-left: 8px;
+}
+
+.Login-title-container {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+.Login-title-container .login-title {
+  font-size: 48px;
+  font-weight: 350;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -284,6 +299,82 @@ a:active {
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
+}
+
+.login-form-container {
+  max-width: 443px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-check {
+  text-align: right;
+}
+.form-check .form-label {
+  font-weight: 400;
+}
+
+.form-check .register-link {
+  font-size: 16px;
+  text-decoration: none;
+  opacity: 0.8;
+  padding-right: 10px;
+}
+.form-check .btn-login {
+  width: 121px;
+  height: 48px;
+  background-color: var(--btn-login-bg);
+  color: var(--bright);
+}
+
+.img-logo {
+  width: 116px;
+  height: 32px;
+}
+
+.search-icon {
+  font-size: 25px;
+}
+
+.cart-item .cart-icon {
+  font-size: 20px;
+}
+.cart-item .cart-count {
+  font-size: 25px;
+}
+
+.login-with-facebook .btn-facebook {
+  width: 442px;
+  height: 63px;
+  background-color: var(--btn-facebook-bg) !important;
+}
+.login-with-facebook .btn-facebook .icon-facebook {
+  font-size: 43px;
+  color: var(--bright);
+  padding-right: 20px;
+}
+.login-with-facebook .btn-facebook .facebook-login-title {
+  color: var(--bright);
+  font-size: 24px;
+}
+
+.auth-links .login-link {
+  padding-right: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--bright);
+  opacity: 0.6;
+}
+.auth-links .register-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--bright);
+  opacity: 0.6;
+}
+
+.menu-nav {
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
