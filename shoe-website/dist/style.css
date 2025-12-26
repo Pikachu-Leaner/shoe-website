@@ -208,6 +208,7 @@ template {
   --bg-credit: #dcdc;
   --btn-login-bg: #6200ee;
   --btn-facebook-bg: #1877f2;
+  --login-footer-end-bg: #D9D9D9;
 }
 
 html {
@@ -287,6 +288,10 @@ a:active {
 .Login-title-container .login-title {
   font-size: 48px;
   font-weight: 350;
+}
+
+.credit-Section {
+  background-color: var(--login-footer-end-bg);
 }
 
 .wrapper {
