@@ -1,0 +1,104 @@
+.product-card {
+  background-color: #282b34;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  height: 100%;
+  position: relative;
+
+  .card-header-custom {
+    position: absolute;
+    top: 5px;   
+    right: 5px;  
+    z-index: 10px;  
+  }
+}
+
+.card-header-custom {
+  text-align: right;
+  padding: 1rem 1rem 0;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #ffd700;
+}
+
+.Sale-item {
+  background-color: #9061f9;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  margin-left: 2%;
+  font-weight: 600;
+}
+
+.Hot-item {
+  background-color: rgb(250, 133, 133);
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  margin-left: 3%;
+  font-weight: 600;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.product-name
+{
+    font-size: 25px;
+    color: var(--bright);
+    &:hover
+    {
+        color: #9061f9;
+    }
+}
+
+.btn-heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1a1a1a; 
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+
+  .heart-icon {
+    font-size: 25px;
+    color: #d6d5d5; 
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: #000000; 
+
+    .heart-icon {
+      color: #d452ee; 
+    }
+  }
+}
+
+.card-body-custom {
+    margin-right: 25px;
+    margin-left: 25px;
+}

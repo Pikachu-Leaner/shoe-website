@@ -20,3 +20,59 @@
   }
 }
 
+.header-components
+{
+  .heart-item, .bag-item {
+    position: relative; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent !important;
+    font-size:  20px;
+
+
+    .badge-count {
+        position: absolute;
+        top: -8px;   
+        right: -10px; 
+        
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        
+        // Colors
+        background-color: red;
+        color: white;
+        
+        // Text Alignment
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 600;
+    }
+  }
+}
+
+.buy-now-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 5px; 
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #ffffff;
+
+    background-color: transparent; 
+    border: 1px solid #9061f9; 
+    
+    transition: all 0.3s ease; 
+}
+
+.buy-now-btn:hover {
+    background: linear-gradient(90deg, #7b8aff 0%, #b054fc 100%);
+    border-color: transparent; 
+    box-shadow: 0 0 10px rgba(123, 138, 255, 0.4); 
+}

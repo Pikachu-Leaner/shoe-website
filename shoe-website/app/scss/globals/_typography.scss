@@ -1,14 +1,14 @@
 h1,
 h2,
 h3 {
-	font-weight: 700;
-	line-height: 1.1;
-	margin-top: 0;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
 }
 a,
 a:visited,
 a:active {
-	text-decoration: none;
+  text-decoration: none;
 }
 // heading, text
 
@@ -27,7 +27,29 @@ a:active {
   }
 }
 
-.credit-Section
-{
+.credit-Section {
   background-color: var(--login-footer-end-bg);
+}
+
+.form-control {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
+
+  &::placeholder {
+    color: white !important;
+  }
+}
+
+.card-section .title-card-container {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a77dfa 0%, #e64b97 100%);
+
+  background-clip: text;
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }

@@ -294,6 +294,25 @@ a:active {
   background-color: var(--login-footer-end-bg);
 }
 
+.form-control {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
+}
+.form-control::placeholder {
+  color: white !important;
+}
+
+.card-section .title-card-container {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a77dfa 0%, #e64b97 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -349,6 +368,10 @@ a:active {
   font-size: 25px;
 }
 
+.user-icon {
+  font-size: 20px;
+}
+
 .login-with-facebook .btn-facebook {
   width: 442px;
   height: 63px;
@@ -362,6 +385,201 @@ a:active {
 .login-with-facebook .btn-facebook .facebook-login-title {
   color: var(--bright);
   font-size: 24px;
+}
+
+.header-components .heart-item, .header-components .bag-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent !important;
+  font-size: 20px;
+}
+.header-components .heart-item .badge-count, .header-components .bag-item .badge-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.buy-now-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #9061f9;
+  transition: all 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background: linear-gradient(90deg, #7b8aff 0%, #b054fc 100%);
+  border-color: transparent;
+  box-shadow: 0 0 10px rgba(123, 138, 255, 0.4);
+}
+
+.product-carousel {
+  color: var(--bright);
+  min-height: 500px;
+  align-items: center;
+  padding: 60px 0;
+}
+.product-carousel .product-title {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.product-carousel .product-desc {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 50px;
+  font-weight: 500;
+  max-width: 600px;
+}
+.product-carousel img {
+  max-height: 400px;
+  object-fit: contain;
+}
+.product-carousel .btn-buy {
+  background-color: #7d6aff;
+  background-image: linear-gradient(135deg, #8999ee 0%, #a261ff 100%);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.product-carousel .btn-buy:hover {
+  transform: translateY(-2px);
+  background-image: linear-gradient(135deg, #9061f9 0%, #e74694 100%);
+  color: white;
+}
+.product-carousel .carousel-indicators {
+  bottom: -40px;
+}
+.product-carousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin: 0 6px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.product-card {
+  background-color: #282b34;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  height: 100%;
+  position: relative;
+}
+.product-card .card-header-custom {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10px;
+}
+
+.card-header-custom {
+  text-align: right;
+  padding: 1rem 1rem 0;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #ffd700;
+}
+
+.Sale-item {
+  background-color: #9061f9;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  margin-left: 2%;
+  font-weight: 600;
+}
+
+.Hot-item {
+  background-color: rgb(250, 133, 133);
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  margin-left: 3%;
+  font-weight: 600;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.product-name {
+  font-size: 25px;
+  color: var(--bright);
+}
+.product-name:hover {
+  color: #9061f9;
+}
+
+.btn-heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+.btn-heart .heart-icon {
+  font-size: 25px;
+  color: #d6d5d5;
+  transition: color 0.3s ease;
+}
+.btn-heart:hover {
+  background-color: #000000;
+}
+.btn-heart:hover .heart-icon {
+  color: #d452ee;
+}
+
+.card-body-custom {
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .auth-links .login-link {
