@@ -422,7 +422,7 @@ a:active {
   font-size: 0.9rem;
   color: #ffffff;
   background-color: transparent;
-  border: 1px solid #9061f9;
+  border: 2px solid #9061f9;
   transition: all 0.3s ease;
 }
 
@@ -557,8 +557,8 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #1a1a1a;
   text-decoration: none;
