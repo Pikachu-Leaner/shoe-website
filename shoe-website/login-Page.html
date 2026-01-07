@@ -93,20 +93,21 @@
 	</section>
 
 	<!-- Login form -->
-	<div class="login-form-container">
-		<form>
+	<div id="error" class="login-form-container">
+		<form id="login" method="get" action="/">
 			<div class="mb-4 pb-1">
 				<label for="exampleInputEmail1" class="form-label">Email</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-					placeholder="Email">
-				<div id="emailResponse" class="form-text"></div>
+				<input type="email" class="form-control" id="email-Login" aria-describedby="emailHelp"
+					placeholder="Email" required>
+				<div id="emailResponse" class="error"></div>
 			</div>
 			<div class="mb-4 pb-1">
 				<label for="exampleInputPassword1" class="form-label">Password</label>
 
 				<div class="input-group">
-					<input type="password" class="form-control custom-password-input border-end-0"
-						id="exampleInputPassword1" placeholder="Password">
+					<input type="password" class="form-control custom-password-input border-end-0" id="password-Login"
+						placeholder="Password" required>
+					<div id="passwordResponse" class="error"></div>
 
 					<span class="input-group-text custom-password-input border-start-0" id="password-toggle">
 						<i class="fa fa-eye"></i>
@@ -118,7 +119,7 @@
 			<!-- Login with usser and password or register -->
 			<div class="mb-2 form-check">
 				<a href="#" class="register-link">Register now ?</a>
-				<button type="button" class="btn rounded-pill btn-login">Login</button>
+				<button class="btn rounded-pill btn-login" id="btn-Login" type="submit">Login</button>
 			</div>
 
 			<!-- Login with facebook -->
@@ -171,16 +172,15 @@
 			</div>
 		</div>
 
+		<!-- Credit -->
+		<section class="credit-Section mt-3">
+			<div class="text-center p-3 credit-info">
+				<p class="mb-0 text-dark">
+					© 2022 Cybersoft All Rights Reserved | Design Theme by Trương Tấn Khải.
+				</p>
+			</div>
+		</section>
 	</footer>
-
-	<!-- Credit -->
-	<section class="credit-Section">
-		<div class="text-center p-3 credit-info">
-			<p class="mb-0 text-dark">
-				© 2022 Cybersoft All Rights Reserved | Design Theme by Trương Tấn Khải.
-			</p>
-		</div>
-	</section>
 
 	<!-- boostrap script-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
